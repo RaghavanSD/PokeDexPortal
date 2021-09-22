@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  background-color: rgb(255 255 255);
+}
+
+.grid-container {
+  width: 70%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  width:100%;
+}
+
+.btn button {
+  border-style: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background: #30a7d7;
+  color: #fff;
+  font-size: 1em;
+  width:15%;
+
+}
+.card *{
+  background-color: #fefefe;;
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border: none !important;;
+  cursor: pointer;
+  width: 18rem;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.spanItemPerpage{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-right: 10px;
+}
+
+.card-title {
+  text-transform: capitalize;
+}
+
+.list-group {
+  flex-direction: row!important;
+}
+.abilitySpan{
+  background: mediumseagreen;
+  padding: 5px 8px;
+  border-radius: 25px;
+  color: white;
+}
+.abilitySpan:not(:first-child){
+  margin-left: 5px;
+}
+
+.Card__data Card__data--ability{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
